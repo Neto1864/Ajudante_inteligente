@@ -9,9 +9,9 @@
 <body>
     
     <main>
-        <!-- Comando de voz -->>
+        <!-- Comando de voz -->
         <section id="comando_voz">
-            <button id="btn_escutar"> CLique aqui para conversar com o assistente </button>
+            <button id="btn_escutar" type="button" aria_label="Menu interativo com a IA"> Clique aqui para conversar com o assistente </button>
             <p id="status_de_conexao">
                 Ouvindo,
                 Analisando,
@@ -20,15 +20,55 @@
             </p>
         </section>
 
-        <!-- Upload e comparação de imagens -->>
+        <!-- Upload e comparação de imagens -->
          <section id="analise_img">
-            <label for="carregar_img"> Arquivo cliente </label>
-            <input type="file" id="carregar_img" accept="image/*, .pdf">
+            <label for="carregar_img1"> Arquivo cliente </label>
+            <input type="file" id="carregar_img1" accept="image/*, .pdf">
+            <img id="primeiro_arquivo" src="" alt="Prévia do arquivo 1" style="display:nano; max_width: 200px;">
 
-            <label id="carregar_img"> Arquivo pessoal </label>
-            <input type="file" id="carregar_img" accept="image/*, .pdf">
+            <label for="carregar_img2"> Arquivo pessoal </label>
+            <input type="file" id="carregar_img2" accept="image/*, .pdf">
+            <img id="segundo_arquivo" src="" alt="Prévia do arquivo 2" style="display:nano; max_width: 200px;">
+
+            <button id="btn_envio_imagens">Analisar Imagens</button>
          </section>
+
+         <!-- Exibindo resultados da IA -->
+         <section id="resposta_IA">
+            <h2>Respondendo a sua ordem</h2>            
+            <div id="resposta_do_comando"></div>
+         </section>
+
+        <!-- Banco de Dados Local -->
+         <section id="DB_Local">
+            <h2> Banco de Dados Local </h2>
+
+            <div id="painel_lgpd">
+                <span id="painel_segurança"> Banco de dados rodando 100% offline</span>
+            </div>
+
+            <table id="tabela_privada">
+                <thead> <!-- Table Head (THead), cabeçalho da tabela onde fica separado as estrutura em linhas e colunas -->
+                    <tr> 
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Disponibilidade</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+         </section>
+
     </main>
 
-    <footer> Assistente Virtual </footer>
+    <footer> @Assistente Virtual, @NETO </footer>
 </body>
