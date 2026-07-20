@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- linha excencial -->
+
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <title>Assistente Virtual</title> <!-- nome que fica na aba do navegador -->
+</head>
+
+<body>
+    
+    <main>
+        <!-- Comando de voz -->>
+        <section id="comando_voz">
+            <button id="btn_escutar"> CLique aqui para conversar com o assistente </button>
+            <p id="status_de_conexao">
+                Ouvindo,
+                Analisando,
+                Respondendo,
+                Esperando,
+            </p>
+        </section>
+
+        <!-- Upload e comparação de imagens -->>
+         <section id="analise_img">
+            <label for="carregar_img"> Arquivo cliente </label>
+            <input type="file" id="carregar_img" accept="image/*, .pdf">
+
+            <label id="carregar_img"> Arquivo pessoal </label>
+            <input type="file" id="carregar_img" accept="image/*, .pdf">
+         </section>
+    </main>
+
+    <footer> Assistente Virtual </footer>
+</body>
